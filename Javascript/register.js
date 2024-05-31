@@ -37,7 +37,7 @@ async function registerUser() {
     checkbox
   );
   if (formStatus === true) {
-    await setItem("allRegisteredUsers", JSON.stringify(allRegisteredUsers));
+    await setItem("allRegisteredUsers", allRegisteredUsers);
     resetForm(name, email, password, confirmPassword);
     signedUpSuccessfully();
     countdownToRedirect();
